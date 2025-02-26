@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nama</title>
+    <script>
+        function showAlert(event) {
+            event.preventDefault(); // Mencegah form dari submit default
+            let name = document.getElementById("nama").value;
+            alert("Halo, " + name + "!");
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="showAlert(event)">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
